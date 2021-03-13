@@ -3,5 +3,33 @@
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: white;
+	background: #FFE3B3;
+	text-align: center;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.menuLine{
+	font-size: 100%;
+	color:#800000;
+}
+.menuLine:hover{
+	font-weight: bold;
+	color:rgb(59, 2, 2)
+}
+
+body{
+	background: #FFE3B3;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.title{
+	font-size: 150%;
+	color:#800000;
+	text-align: center;
+	border-style: solid;
+}
+.sec{
+	text-align: left;
+
 }
