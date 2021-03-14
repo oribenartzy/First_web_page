@@ -20,6 +20,19 @@ a{
 	color:rgb(18, 3, 61)
 }
 
+.rotate {
+	animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+
 .menuLine:hover{
 	font-weight: bold;
 	color:rgb(59, 2, 2)
