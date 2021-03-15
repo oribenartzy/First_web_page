@@ -9,7 +9,7 @@
   <a class="menuLine" href="#photos">My Photos | </a>
   <a class="menuLine" href="#playlist">My Playlist | </a>
   <a class="menuLine" href="#like">Like | </a>
-  </li><a class="menuLine" href="#qrcoder">QR code | </a>
+  <a class="menuLine" href="#qrcoder">QR code | </a>
   <a class="menuLine" href="#spa">Q&A | </a>
   <a class="menuLine" href="#contact">Contact Me</a>
 </div>
@@ -68,7 +68,7 @@
   <br/>
 </div>
 <div class="sec">
-  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qQzdAsjWGPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qQzdAsjWGPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 <br/>
 <br/>
@@ -93,10 +93,6 @@
 <div class="fb-like" data-href="https://web-development-environments-2021.github.io/assignment1-oribena/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="false">
 </div>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="qrcoder" class="section">
@@ -136,7 +132,38 @@
 <div class="title">
   contact me
 </div>
-<br/>
+<div class="sec">
+  <form action="mailto:orikiba@gmail.com" method="post" enctype="text/plain">
+  <br/>
+  Name:<br>
+  <INPUT NAME="Name" TYPE="text"><br>
+    <br/>
+  E-mail Address:<br>
+  <INPUT NAME="E-mail" TYPE="text"><br>
+    <br/>
+  Message:<br>
+  <TEXTAREA NAME = "Message" ROWS = "4" COLS = "36"></TEXTAREA>
+  <br/>
+  Add emoji to the e-mail:<br>
+  <div class="sec">
+    &#128151 
+  <INPUT NAME = "emoji" TYPE = "radio"
+    VALUE = "&#128151" CHECKED>
+    &#128516 
+  <INPUT NAME = "emoji" TYPE = "radio" 
+    VALUE = &#128516>
+    &#127804 
+  <INPUT NAME = "emoji" TYPE = "radio" 
+    VALUE = "&#127804">
+    &#128077 
+  <INPUT NAME = "emoji" TYPE = "radio" 
+    VALUE = "&#128077">
+    </div>
+    <br/>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+  </form>
+</div>
 <br/>
 <br/>
 <br/>
@@ -156,5 +183,6 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
 </body>
 </html>
