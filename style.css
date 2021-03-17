@@ -13,12 +13,6 @@
 	color:#800000;
 }
 
-a{
-	text-decoration-line: none;
-	font-size: 180%;
-	text-align: center;
-	color:rgb(18, 3, 61)
-}
 
 .rotate {
 	animation: rotation 8s infinite linear;
@@ -50,6 +44,13 @@ body{
 	text-align: center;
 	border-style: solid;
 }
+
+.ans{
+	font-size: 120%;
+	text-decoration: underline;
+
+}
+
 .sec{
 	text-align: center;
 }
