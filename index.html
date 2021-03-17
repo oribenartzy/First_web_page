@@ -133,13 +133,16 @@
   contact me
 </div>
 <div class="sec">
-  <form action="mailto:orikiba@gmail.com" method="post" enctype="text/plain">
+  <form name="sendEmail" formaction="#" onsubmit="return sendMail(this);">
   <br/>
   Name:<br>
   <INPUT NAME="Name" TYPE="text"><br>
     <br/>
   E-mail Address:<br>
-  <INPUT NAME="E-mail" TYPE="text"><br>
+  <INPUT NAME="mail" TYPE="text"><br>
+    <br/>
+  E-mail subject:<br>
+  <INPUT NAME="subject" TYPE="text"><br>
     <br/>
   Message:<br>
   <TEXTAREA NAME = "Message" ROWS = "4" COLS = "36"></TEXTAREA>
@@ -183,6 +186,22 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+
+<script>
+  function sendMail(form){
+    let link = document.createElement('a');
+    let name = form.Name.value;
+    let comment = form.Message.value;
+    let mail = form.mail.value;
+    let subject = form.subject.value;
+    let emoji = form.emoji.value;
+    let message = "Hi, my name is " + name + " " + emoji + ".%0d%0a" + "My email address is: " + mail + ".%0d%0a" + comment;
+    link.href = "mailto:orikiba@gmail.com?subject=" + subject + " &body=" + message;
+    link.click();
+    alert("email sent");
+  }
+</script>
 
 </body>
 </html>
