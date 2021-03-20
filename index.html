@@ -25,9 +25,28 @@
   </div>
     <div class="about">
       <ul>
-    My name is ori.
+    My grandfather, Avshalom Shohat, was born and raised in Haifa.  <br/>
     <br/>
-    bla bla bla
+    Grandpa attended The Hebrew Reali School in Haifa and studied History and
+    Political Science in Jerusalem.  <br/>  
+    <br/>
+    His father was one of the senior educators in the country and is the persona that
+    influenced and inspired him the most throughout his life.  <br/>
+    <br/>
+    He later moved to Calgary, Canada, and Michigan in the United States, where he
+    worked as a teacher and studied Communication, and received his Doctor degree
+    in Educational Technology.  <br/>
+    <br/>
+    Upon his return to Israel, he worked in the Open University developing courses
+    and a few years later in the College of Management as Head of the New Media
+    Department.  <br/>
+    <br/>
+    His hobbies are mainly exploring new gadgets of all sorts, growing fish in salted
+    water in an aquarium, and of course, spending time with his family  <br/>
+    <br/>
+    This year Grandpa celebrated his 80th birthday!!!  <br/>
+    <br/>
+    Love you so much, grandpa
       </ul>
     </div>
     <br/>
@@ -188,16 +207,16 @@
   Name:<br>
   <INPUT NAME="Name" TYPE="text"><br>
     <br/>
-  E-mail Address:<br>
-  <INPUT NAME="mail" TYPE="text"><br>
+  Email Address:<br>
+  <INPUT NAME="Email" TYPE="text"><br>
     <br/>
-  E-mail subject:<br>
+  Email subject:<br>
   <INPUT NAME="subject" TYPE="text"><br>
     <br/>
   Message:<br>
   <TEXTAREA NAME = "Message" ROWS = "4" COLS = "36"></TEXTAREA>
   <br/>
-  Add emoji to the e-mail:<br>
+  Add emoji to the Message:<br>
   <div class="sec">
     &#128151 
   <INPUT NAME = "emoji" TYPE = "radio"
@@ -243,13 +262,13 @@ $(function(){
     let link = document.createElement('a');
     let name = form.Name.value;
     let comment = form.Message.value;
-    let mail = form.mail.value;
+    let Email = form.Email.value;
     let subject = form.subject.value;
     let emoji = form.emoji.value;
-    let message = "Hi, my name is " + name + " " + emoji + ".%0d%0a" + "My email address is: " + mail + ".%0d%0a" + comment;
+    let message = "Hi, my name is " + name + " " + emoji + ".%0d%0a" + "My email address is: " + Email + ".%0d%0a" + comment;
     link.href = "mailto:orikiba@gmail.com?subject=" + subject + " &body=" + message;
     link.click();
-    alert("email sent");
+    alert("Email sent successfully");
   }
 </script>
 
