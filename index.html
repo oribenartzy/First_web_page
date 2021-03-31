@@ -5,13 +5,13 @@
 </head>
 <body>
 <div id="menu">
-  <a class="menuLine" href="#about">About Me | </a>
-  <a class="menuLine" href="#photos">My Photos | </a>
-  <a class="menuLine" href="#playlist">My Playlist | </a>
-  <a class="menuLine" href="#like">Like | </a>
-  <a class="menuLine" href="#qrcoder">QR code | </a>
-  <a class="menuLine" href="#spa">Q&A | </a>
-  <a class="menuLine" href="#contact">Contact Me</a>
+  <a class="menuObj" href="#about">About Me |</a>
+  <a class="menuObj" href="#photos">My Photos |</a>
+  <a class="menuObj" href="#playlist">My Playlist |</a>
+  <a class="menuObj" href="#like">Like |</a>
+  <a class="menuObj" href="#qrcoder">QR code |</a>
+  <a class="menuObj" href="#spa">Q&A |</a>
+  <a class="menuObj" href="#contact">Contact Me</a>
 </div>
 <img id="logo" src="logo4.png" class="rotate" width="100" height="100">
 		  
@@ -98,7 +98,7 @@
 
 </section>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="GRufHMIx"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v10.0" nonce="ZLuITiH3"></script>
 <section id="like" class="section">
 
 <br/>
@@ -111,8 +111,7 @@
 <br/>
 <br/>
 <div class="sec">
-<div class="fb-like" data-href="https://web-development-environments-2021.github.io/206252496/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="false">
-</div>
+<div class="fb-like" data-href="https://web-development-environments-2021.github.io/206252496/" data-width="" data-layout="box_count" data-action="like" data-size="small" data-share="false"></div>
 </div>
 </section>
 
@@ -146,7 +145,7 @@
   Question 1
   </ul>
 </div>
-<ol>
+<ul>
     Web1:
       <li>
         Limited interaction between sites and web users.
@@ -157,9 +156,9 @@
       <li>
         The content of the web pages was static - Read only web.
       </li>
-  </ol>
+  </ul>
 <br/>
-<ol>
+<ul>
   Web2:
     <li>
       Interaction between web users and sites
@@ -171,9 +170,9 @@
       Encourages information sharing, participation and collaboration - Read - Write web.
 
     </li>
-</ol>
+</ul>
 <br/>
-<ol>
+<ul>
   Web3:
     <li>
       Semantic web which refers to the future. 
@@ -184,7 +183,7 @@
     <li>
       Read - write - execute web.
     </li>
-</ol>
+</ul>
 <br/>
 <div class="ans">
   <ul>
@@ -283,8 +282,8 @@ $(function(){
     let Email = form.Email.value;
     let subject = form.subject.value;
     let emoji = form.emoji.value;
-    let message = "Hi, my name is " + name + " " + emoji + ".%0d%0a" + "My email address is: " + Email + ".%0d%0a" + comment;
-    link.href = "mailto:orikiba@gmail.com?subject=" + subject + " &body=" + message;
+    let body = "Hello, it's " + name + emoji + "%0d%0a" + "My email address is: " + Email + ".%0d%0a" + comment;
+    link.href = "mailto:orikiba@gmail.com?subject=" + subject + " &body=" + body;
     link.click();
     window.alert("Email sent successfully");
   }

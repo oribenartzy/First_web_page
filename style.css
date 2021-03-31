@@ -8,7 +8,7 @@
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
-.menuLine{
+.menuObj{
 	font-size: 100%;
 	color:#800000;
 }
@@ -27,7 +27,7 @@
 	}
   }
 
-.menuLine:hover{
+.menuObj:hover{
 	font-weight: bold;
 	color:rgb(59, 2, 2)
 }
