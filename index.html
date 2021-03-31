@@ -278,11 +278,13 @@ $(function(){
   function sendMail(form){
     let link = document.createElement('a');
     let name = form.Name.value;
-    let comment = form.Message.value;
-    let Email = form.Email.value;
+    let message = form.Message.value;
+    let email = form.Email.value;
     let subject = form.subject.value;
     let emoji = form.emoji.value;
-    let body = "Hello, it's " + name + emoji + "%0d%0a" + "My email address is: " + Email + ".%0d%0a" + comment;
+
+
+    let body = "Hello, it's " + name + emoji + "%0d%0a" + "My email address is: " + email + ".%0d%0a" + message;
     link.href = "mailto:orikiba@gmail.com?subject=" + subject + " &body=" + body;
     link.click();
     window.alert("Email sent successfully");
