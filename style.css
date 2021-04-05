@@ -12,12 +12,9 @@
 	font-size: 100%;
 	color:#800000;
 }
-
-
 .rotate {
 	animation: rotation 8s infinite linear;
   }
-  
   @keyframes rotation {
 	from {
 	  transform: rotate(0deg);
@@ -26,12 +23,10 @@
 	  transform: rotate(359deg);
 	}
   }
-
 .menuObj:hover{
 	font-weight: bold;
 	color:rgb(59, 2, 2)
 }
-
 body{
 	color:#800000;
 	background: #FFE3B3;
@@ -51,14 +46,12 @@ body{
 	background: linear-gradient(to right,#800000,rgb(146, 30, 30),rgb(212, 66, 22), rgb(212, 152, 23),#FFE3B3,rgb(212, 152, 23),rgb(212, 66, 22),rgb(146, 30, 30),#800000);
 
 }
-
 .ans{
 	color:#800000;
 	font-size: 120%;
 	text-decoration: underline;
 
 }
-
 .sec{
 	color:#800000;
 	text-align: center;
